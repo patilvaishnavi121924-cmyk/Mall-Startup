@@ -58,4 +58,4 @@ Mall-Startup/
 
 ## 👩‍💻 Author
 
-Sanvi
+Vaishnavi Patil

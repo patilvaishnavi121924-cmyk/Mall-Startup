@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mall Startup</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+body{
+    scroll-behavior:smooth;
+    background:Lavender;
+    color:blue ;
+    transition:0.3s;
+}
+
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .card,
+.dark .accordion-item{
+    background:#222;
+    color:white;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+
+.hero{
+    height: 500px;
+    width: 100%;
+    background-image: url("https://images.nobroker.in/img/63a95ca6b54b080001d7a2e0/63a95ca6b54b080001d7a2e0_43051_231936_original.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery img{
+    height:220px;
+    width:100%;
+    object-fit:cover;
+}
+
+.price-card{
+    transition:.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.popular{
+    border:3px solid #dc3545;
+}
+
+.mall-title{
+    color: white !important;
+}
+
+.same-img{
+    width: 100%;
+    height: 500px;      
+    object-fit: cover;
+}
+
+
+
+footer{
+    background:#111;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+Capital Mall
+</a>
+
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+
+
+<button class="btn btn-primary ms-3" onclick="mode()">
+🌙 / ☀️
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<h1 class="display-3 fw-bold mall-title">
+    CAPITAL Mall
+</h1>
+<a href="#contact" class="btn btn-primary btn-lg">
+Visit Mall
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="container py-5" id="about">
+
+<h2 class="text-center">
+About Us
+</h2>
+
+<p class="text-center">
+Capital Mall offers a premium shopping experience in Vasai-Nalasopara with top brands in fashion, food, beauty, entertainment, and sports. Explore, shop, dine, and enjoy everything you love under one roof. #WalkIntoHappiness
+</p>
+
+</section>
+
+
+
+
+<section class="bg-light py-5" id="services">
+
+<div class="container">
+
+<h2 class="text-center mb-4">
+Our Features
+</h2>
+
+
+<div class="row text-center">
+
+
+<div class="col-md-4">
+
+<i class="bi bi-shop fs-1 text-danger"></i>
+
+<h4>Premium Stores</h4>
+
+<p>100+ fashion and lifestyle brands.</p>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<i class="bi bi-cup-hot fs-1 text-danger"></i>
+
+<h4>Food Court</h4>
+
+<p>Delicious food from popular restaurants.</p>
+
+</div>
+
+
+
+<div class="col-md-4">
+<i class="bi bi-film fs-1 text-danger"></i>
+<h4>Entertainment</h4>
+<p>Movies, games and family activities.</p>
+</div>
+</div>
+</div>
+</section>
+    
+<section class="container py-5 gallery">
+
+<h2 class="text-center mb-4">
+Mall Gallery
+</h2>
+<div class="row g-3">
+<div class="col-md-4"><img src="https://i.ibb.co/J8hCvX8/PVREntertainment-Carousel-Home-Page.jpg"></div>
+
+<div class="col-md-4"><img src="https://i.ibb.co/27FRfpTd/Timezone-Entertainment-Carousel-Home-Page.png"></div>
+
+<div class="col-md-4"><img src="https://i.ibb.co/KczJfzsp/Dino-Capital-Event-Banner-1080x1350-jpg-768x960.jpg"></div>
+</div>
+</section>
+
+<section class="bg-danger text-white py-5">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-4">
+<h2>500+</h2>
+<p>Brands</p>
+</div>
+
+
+<div class="col-md-4">
+<h2>50+</h2>
+<p>Stores</p>
+</div>
+
+
+<div class="col-md-4">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container py-5">
+
+<h2 class="text-center">
+Customer Reviews
+</h2>
+
+
+<div class="row">
+
+
+<div class="col-md-4">
+<div class="card p-3">
+
+<p>
+"Best shopping experience with amazing facilities."
+</p>
+
+<h5>- Vaishnavi</h5>
+
+</div>
+</div>
+
+
+
+<div class="col-md-4">
+<div class="card p-3">
+
+<p>
+"Beautiful mall with great food options."
+</p>
+
+<h5>- Sanvi</h5>
+
+</div>
+</div>
+
+
+
+<div class="col-md-4">
+<div class="card p-3">
+
+<p>
+"Perfect place for family weekends."
+</p>
+
+<h5>- Manas</h5>
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="container py-5" id="pricing">
+
+<h2 class="text-center">
+Membership Plans
+</h2>
+
+
+<div class="row mt-4">
+
+
+<div class="col-md-4">
+
+<div class="card price-card p-3">
+
+<h3>Basic</h3>
+
+<h2>₹499</h2>
+
+<p>✔ Shopping Offers</p>
+<p>✔ Parking Access</p>
+
+<button class="btn btn-dark">
+Choose
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card price-card popular p-3">
+
+<h3>Premium ⭐</h3>
+
+<h2>₹999</h2>
+
+<p>✔ All Basic Features</p>
+<p>✔ VIP Discounts</p>
+<p>✔ Event Access</p>
+
+<button class="btn btn-danger">
+Most Popular
+</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card price-card p-3">
+
+<h3>Luxury</h3>
+
+<h2>₹1999</h2>
+
+<p>✔ Personal Shopping</p>
+<p>✔ Exclusive Offers</p>
+
+<button class="btn btn-dark">
+Choose
+</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="container py-5">
+
+<h2 class="text-center">
+FAQ
+</h2>
+
+
+<div class="accordion" id="faq">
+
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">
+
+What are mall timings?
+
+</button>
+
+</h2>
+
+<div id="one" class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+Mall opens from 10 AM to 10 PM.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#two">
+
+Do you provide parking?
+
+</button>
+
+</h2>
+
+<div id="two" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Yes, we provide secure parking facilities.
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="container py-5">
+
+<h2 class="text-center">
+Latest Blogs
+</h2>
+
+
+<div class="row">
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://i.ibb.co/chSFDXR5/IMG-20260615-232924.jpg" class="card-img-top same-img">
+
+<div class="card-body">
+
+<h5>New Fashion Trends</h5>
+
+<p>Explore latest collections.</p>
+
+<button class="btn btn-danger">
+Read More
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://thecapitalmall.com/wp-content/uploads/2023/10/Meet-The-Dinosaurs-2022.jpg" class="card-img-top same-img">
+
+<div class="card-body">
+
+<h5>Mall Events</h5>
+
+<p>Upcoming entertainment events.</p>
+
+<button class="btn btn-danger">
+Read More
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://sceneloc8.com/wp-content/uploads/2024/03/1-126.png" class="card-img-top same-img">
+
+<div class="card-body">
+
+<h5>Food Festival</h5>
+
+<p>Enjoy delicious cuisines.</p>
+
+<button class="btn btn-danger">
+Read More
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+
+
+<section class="container py-5" id="contact">
+
+
+<h2 class="text-center">
+Contact Us
+</h2>
+
+
+<form class="mt-4">
+
+
+<input class="form-control mb-3" placeholder="Name">
+
+
+<input class="form-control mb-3" placeholder="Email">
+
+
+<textarea class="form-control mb-3" placeholder="Message"></textarea>
+
+
+<button class="btn btn-danger">
+Send Message
+</button>
+
+
+</form>
+
+
+<p class="mt-4">
+📞 9876543210 <br>
+📧 capitalmall@gmail.com
+</p>
+
+
+</section>
+
+
+
+<footer class="p-4 text-center">
+
+
+<p>
+© 2026 Capital Mall Startup
+</p>
+
+<p>
+Instagram | Facebook | Twitter
+</p>
+</footer>
+
+<script>
+function mode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
